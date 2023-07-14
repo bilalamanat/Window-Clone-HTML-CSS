@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows 11 Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dd.js">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content-box" id="control">
+      <input type="search" placeholder="Type here to Search" />
+      <div class="pinned">
+        <img src="./Images/word-icon.png" alt="" />
+        <img src="./Images/phottos.png" alt="" />
+        <img src="./Images/powerpoint-icon.png" alt="" />
+        <img src="./Images/excel-icon.png" alt="" />
+        <img src="./Images/ms-office.png" alt="" />
+        <img src="./Images/vs-code.png" alt="" />
+        <img src="./Images/vs-normal.png" alt="" />
+      </div>
+
+      <div class="pinned">
+        <img src="./Images/ms-skype.png" alt="" />
+        <img src="./Images/outlook-icon.png" alt="" />
+        <img src="./Images/ms-video-icon.png" alt="" />
+        <img src="./Images/Settings.png" alt="" />
+        <img src="./Images/Whiteboard.png" alt="" />
+        <img src="./Images/Paint-2D.png" alt="" />
+        <img src="./Images/Paint-3D.png" alt="" />
+      </div>
+
+      <div class="contents-recom">
+        <div class="recommend">
+          <h1>Recommended</h1>
+          <div class="icon">
+            <img src="./Images/Photos-folder.png" alt="" />
+          </div>
+          <div class="history">
+            <h2>Youtube File</h2>
+            <h4>Yesterday 2:50 PM</h4>
+          </div>
+        </div>
+
+        <div class="recommend">
+          <div class="icon">
+            <img src="./Images/ms-video-icon.png" alt="" />
+          </div>
+          <div class="history2">
+            <h2>Windows.mp4</h2>
+            <h4>Yesterday 3:50 PM</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="profile">Coder48White</div>
+        <div class="btn">
+          <img src="./Images/power-btn.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="logo" id="toggle">
+        <img src="./Images/Logo windows 11.png" alt="" />
+      </div>
+      <div class="logo">
+        <img src="./Images/Search.png" alt="" />
+      </div>
+      <div class="logo">
+        <img src="./Images/edge-icon.png" alt="" />
+      </div>
+      <div class="logo">
+        <img src="./Images/ms-file-explorer.png" alt="" />
+      </div>
+      <div class="logo">
+        <img src="./Images/vs-code.png" alt="" />
+      </div>
+      <div class="logo">
+        <img src="./Images/phottos.png" alt="" />
+      </div>
+      <div class="logo">
+        <img src="./Images/word-icon.png" alt="" />
+      </div>
+      <div class="logo">
+        <img src="./Images/powerpoint-icon.png" alt="" />
+      </div>
+    </div>
+    <script>
+      const target = document.getElementById("control");
+      const btn = document.getElementById("toggle");
+      btn.onclick = function () {
+        if (target.style.opacity !== "0") {
+          target.style.opacity = "0";
+        } else {
+          target.style.opacity = "1";
+        }
+      };
+    </script>
+  </body>
+</html>

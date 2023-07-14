@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(./Images/Wallpaper1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #64648720;
+  backdrop-filter: blur(50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .logo {
+  width: 50px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .logo img {
+  width: 27px;
+  border-radius: 0.9px;
+  height: 27px;
+  object-fit: cover;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.content .logo img:hover {
+  transform: scale(0.9);
+}
+
+.content-box {
+  position: absolute;
+  left: 30%;
+  bottom: 8%;
+  width: 600px;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px 0 #00000036;
+  background-color: #3f353524;
+  backdrop-filter: blur(50px);
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.content-box .bottom {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  background-color: #00010339;
+}
+
+.content-box .bottom .profile {
+  font-family: "Comfortaa", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 13px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.content-box .bottom .profile:hover {
+  transform: scale(0.9);
+}
+
+.content-box .bottom .btn img {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  position: absolute;
+  right: 55px;
+  cursor: pointer;
+  top: 40%;
+  transition: transform 0.5s;
+}
+
+.content-box .bottom .btn img:hover {
+  transform: scale(0.9);
+}
+
+input {
+  height: 40px;
+  width: 90%;
+  outline: none;
+  border: none;
+  background: #252527;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin: 30px;
+}
+
+input::placeholder {
+  letter-spacing: 1px;
+}
+
+.pinned {
+  width: 100%;
+  height: 50px;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pinned img {
+  width: 70px;
+  height: 50px;
+  margin: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.pinned img:hover {
+  transform: scale(0.9);
+}
+
+.contents-recom {
+  display: flex;
+}
+
+.recommend {
+  width: 50%;
+  height: 150px;
+  margin: 40px 0 20px 0;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.recommend h1 {
+  font-size: 18px;
+  padding: 30px;
+  position: absolute;
+  bottom: 180px;
+  font-weight: 500;
+}
+
+.recommend .icon img {
+  width: 55px;
+  height: 55px;
+  margin-left: 30px;
+  position: absolute;
+  bottom: 120px;
+}
+
+.recommend .history {
+  position: absolute;
+  left: 100px;
+  bottom: 125px;
+}
+
+.recommend .history h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.recommend .history h4 {
+  font-weight: 500;
+}
+
+.recommend .history2 {
+  position: absolute;
+  right: 80px;
+  bottom: 125px;
+}
+
+.recommend .history2 h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.recommend .history2 h4 {
+  font-weight: 500;
+}
